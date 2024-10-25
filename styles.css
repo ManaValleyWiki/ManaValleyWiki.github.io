@@ -1,0 +1,227 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e0e0e0;
+}
+
+header {
+    position: relative;
+    background-color: #3d3d3d;
+    z-index: 2;
+}
+
+.banner {
+    background-image: url('img/banner.jpg'); /* Replace with the actual image file path */
+    background-size: cover; /* Ensures the image covers the entire banner area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    text-align: center;
+    color: rgb(79, 77, 77);
+    padding: 100px 20px; /* Adjust padding as needed for banner size */
+    height: 300px; /* Set a specific height for the banner */
+    max-width: 1200px;
+    margin: auto;
+}
+
+.banner h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 10px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+}
+
+main {
+    padding: 10px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 34px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ffcc00; /* Change to any color you want on hover */
+}
+
+#ManaValleyWidget{
+    display:block;
+    margin: auto;
+    text-align: center;
+}
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    padding: 10px;
+}
+
+.menu-toggle i {
+    display: inline-block;
+}
+
+/* Style the collapsible buttons */
+.collapsible {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    margin-top: 5px;
+}
+
+.collapsible:hover {
+    background-color: #444;
+}
+
+/* Style the collapsible content */
+.content {
+    padding: 0 15px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    border-left: 3px solid #333;
+    border-right: 3px solid #333;
+    border-bottom: 3px solid #333;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.content p {
+    margin: 10px 0;
+}
+
+/* Open state for collapsible sections */
+.collapsible.active {
+    background-color: #444;
+}
+
+
+/* Existing styles... */
+
+/* Media query for mobile responsiveness */
+@media (max-width: 1000px) {
+    /* Banner adjustments */
+    .banner {
+        padding: 0px;
+        padding-bottom: 20px; /* Add some space below the banner */
+        width: 100%;
+    }
+
+    .banner h1 {
+        font-size: 32px; /* Smaller font for the banner text */
+    }
+
+
+    nav {
+        position: relative;
+
+    }
+
+    .nav-links {
+        display: none; /* Hide menu links by default on small screens */
+        flex-direction: column;
+        background-color: #333;
+        width: 100%;
+        position: absolute;
+        top: 45px; /* Ensure the dropdown does not overlap the content */
+        left: 0;
+        z-index: 1;
+   
+    }
+    .menu-toggle {
+        display: block; /* Show the hamburger icon */
+        background-color: #333;
+        width: 100%;
+        text-align: right;
+    }
+
+    .nav-links li {
+        border-top: 1px solid #444;
+        text-align: center;
+    }
+
+    .nav-links li a {
+        padding: 15px;
+        display: block;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show menu links when active */
+    }
+
+    /* Ensure the main content starts below the expanded menu */
+    main {
+        margin-top: 80px; /* Adjust as needed to ensure no overlap */
+    }
+
+
+    section {
+        margin-bottom: 20px; /* Reduce the gap between sections */
+    }
+
+    /* Footer adjustments */
+    .social-icons a {
+        font-size: 20px; /* Reduce icon size */
+        margin: 0 5px; /* Adjust spacing between icons */
+    }
+
+    /* Adjust text */
+    footer p {
+        font-size: 14px; /* Smaller font for the footer */
+    }
+    iframe{
+        width: 100%;
+    }
+}
