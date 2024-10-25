@@ -60,6 +60,8 @@ nav ul li a:hover {
 
 main {
     padding: 10px;
+    margin: auto;
+    max-width: 1000px;
 }
 
 section {
