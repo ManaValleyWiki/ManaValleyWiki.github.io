@@ -122,6 +122,26 @@ vertical-align: middle;
     border-spacing: 0;
     color: #555;
 }
+.article-table {
+    background: #504f47;
+    border: 1px solid #111;
+    color: #f1f1f1;
+    border-collapse: collapse;
+    margin: auto;
+}
+.article-table th {
+    background: #353531;
+    color: #f1f1f1;
+    text-align: left;
+    padding: 12px;
+}
+
+.article-table tr td{
+    border: 1px solid #111;
+    padding: 12px;
+    color: #f1f1f1;
+    vertical-align: middle;
+    }
 
 .menu-toggle i {
     display: inline-block;
@@ -149,7 +169,7 @@ vertical-align: middle;
 /* Style the collapsible content */
 .content {
     padding: 0 15px;
-    display: none;
+    display: block;
     overflow: hidden;
     background-color: #f1f1f1;
     border-left: 3px solid #333;
@@ -167,6 +187,28 @@ vertical-align: middle;
 .collapsible.active {
     background-color: #444;
 }
+.navTree {
+    list-style-type: none;
+    border: 2px solid #333;
+    width: 500px;
+    padding: 20px;
+}
+.navTree1{
+    font-size: larger;
+    color: cadetblue;
+    margin-left: 0px;
+}
+.navTree2{
+    font-size: large;
+    color: cadetblue;
+    margin-left: 10px;
+}
+.navTree3{
+    font-size: medium;
+    color: cadetblue;
+    margin-left: 30px;
+}
+
 
 
 /* Existing styles... */

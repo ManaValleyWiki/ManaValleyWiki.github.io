@@ -12,10 +12,11 @@ collapsibles.forEach(function(collapsible) {
 
         // Get the next element (the content div) and toggle its display
         var content = this.nextElementSibling;
-        if (content.style.display === "block") {
-            content.style.display = "none";
-        } else {
+        
+        if (content.style.display === "none") {
             content.style.display = "block";
+        } else {
+            content.style.display = "none";
         }
     });
 });
