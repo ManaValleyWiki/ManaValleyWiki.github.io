@@ -104,6 +104,24 @@ footer {
     color: white;
     padding: 10px;
 }
+.fandom-table tr th{
+border: 1px solid #111;
+padding: 12px;
+vertical-align: middle;
+}
+.fandom-table tr td{
+    border: 1px solid #111;
+    padding: 12px;
+    vertical-align: middle;
+    }
+.fandom-table {
+    background: none;
+    border: 1px solid #111;
+    border-collapse: collapse;
+    border-radius: 3px;
+    border-spacing: 0;
+    color: #555;
+}
 
 .menu-toggle i {
     display: inline-block;
