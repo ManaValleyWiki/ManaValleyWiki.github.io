@@ -232,7 +232,7 @@ footer {
     margin-left: 30px;
 }
 
-.theme-toggle{
+#theme-toggle{
     position: absolute;
     top: 0;
     background-color: #333;
